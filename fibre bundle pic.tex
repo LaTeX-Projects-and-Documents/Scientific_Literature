@@ -1,0 +1,79 @@
+\documentclass[fleqn, 10pt]{article}
+\usepackage{afterpage}
+\usepackage{graphicx}
+\usepackage{amsmath, bm}
+\usepackage{centernot}
+\usepackage{mathtools}
+\usepackage{stmaryrd}
+\usepackage{wrapfig}
+\usepackage[sort&compress]{natbib}
+\usepackage{tikz}
+\usepackage{ctable}
+\usepackage{amssymb}
+\usepackage{caption}
+\usepackage{amstext}
+\usepackage[greek,english]{babel}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{caption}
+\usepackage[margin=0.6in]{geometry}
+\usepackage{titlesec}
+\usepackage{eucal}
+\usepackage{upgreek}
+\usepackage{nccmath}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{shapes.misc}
+\newcommand{\hookuparrow}{\mathrel{\rotatebox[origin=c]{90}{$\hookrightarrow$}}}
+\newcommand{\hookdownarrow}{\mathrel{\rotatebox[origin=c]{-90}{$\hookrightarrow$}}}
+\hyphenpenalty=10000
+\captionsetup[figure]{font=footnotesize}
+\newcommand{\changefont}{\fontsize{9}{10}\selectfont}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead[LE,RO]{\changefont \slshape Final Report}
+\lhead[RE,LO]{\changefont \slshape The Search for Magnetic Monopoles}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
+\usepackage{titling}
+\renewcommand\maketitlehooka{\null\mbox{}\vfill}
+\renewcommand\maketitlehookd{\vfill\null}
+\tikzset{cross/.style={cross out, draw=black, minimum size=2*(#1-\pgflinewidth), inner sep=0pt, outer sep=0pt}, cross/.default={3pt}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\setlength{\mathindent}{0pt}
+\renewcommand{\arraystretch}{1.3}
+\newcommand {\scalelinespace} [1] {\rule{0pt}{#1\normalbaselineskip}}
+
+\begin{document}
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}
+%\draw(2.5,0) arc (0:360:2.5 and 0.75);
+\draw[very thick, -, >=stealth] (0,-3) -- node[left]{$$} (0,2);
+\draw[very thick, -, >=stealth] (-1.8,-1.95) -- node[left]{$$} (-1.8,3.3);
+\draw[very thick, -, >=stealth] (1.8,-1.95) -- node[left]{$$} (1.8,3.3);
+\draw[very thick, -, >=stealth] (-0.6,-1.75) -- node[left]{$$} (-0.6,3.5);
+\draw[very thick, -, >=stealth] (0.6,-1.75) -- node[left]{$$} (0.6,3.5);
+\draw[very thick, -, >=stealth] (-1.5,-2.8) -- node[left]{$$} (-1.5,2.2);
+\draw[very thick, -, >=stealth] (-2.5,-2.25) -- node[above]{$$} (-2.5,2.75);
+\draw[very thick, -, >=stealth] (1.5,-2.8) -- node[right]{$$} (1.5,2.2);
+\draw[very thick, -, >=stealth] (2.5,-2.25) -- node[right]{$$} (2.5,2.75);
+%\draw[very thick, ->, >=stealth] (-2.5,2) -- node[left]{$$} (-2.5,0.9);
+%\fill[fill=black] (-2.5,0) circle (2pt);
+%\fill[fill=black] (-2.5,2) circle (2pt);
+%\node (a) at (-1,0.3) {$M$};
+%\node (b) at (-2.8,1) {$\pi$};
+%\node (c) at (-3, 0.15){$\pi(p)$};
+%\node (d) at (0, 4){$P$};
+%\node (e) at (-2.8, 2){$p$};
+\node (f) at (2.81,0.6){$G$};
+%\node (h) at (-3, -0.25){$= m$};
+\end{tikzpicture}
+\end{figure}
+\end{document}
